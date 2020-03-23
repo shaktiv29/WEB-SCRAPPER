@@ -3,10 +3,10 @@ import time
 from bs4 import BeautifulSoup
 p = 1
 old = []
-
+# Function for alert
 def seperate(x):
     print("Alert Company " + x + "crossed the 2% criteria.")
-while p<= 45:
+while p<= 30:
     ls = []
     res = requests.get("https://www.moneycontrol.com/stocks/marketstats/indexcomp.php?optex=NSE&opttopic=indexcomp&index=9")
     soup = BeautifulSoup(res.text,"lxml")
